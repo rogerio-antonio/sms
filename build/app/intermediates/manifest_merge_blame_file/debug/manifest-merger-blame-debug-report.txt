@@ -1,0 +1,129 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="br.com.rogeriooliveira.chamadas_mensagens"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/debug/AndroidManifest.xml:6:22-64
+15
+16    <queries>
+16-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:3:5-24:15
+17
+18        <!-- If your app opens https URLs -->
+19        <intent>
+19-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:5:5-8:14
+20            <action android:name="android.intent.action.VIEW" />
+20-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:6:9-61
+20-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:6:17-58
+21
+22            <data android:scheme="https" />
+22-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:7:9-40
+22-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:7:15-37
+23        </intent>
+24        <!-- If your app makes calls -->
+25        <intent>
+25-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:10:5-13:14
+26            <action android:name="android.intent.action.DIAL" />
+26-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:11:9-61
+26-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:11:17-58
+27
+28            <data android:scheme="tel" />
+28-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:7:9-40
+28-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:7:15-37
+29        </intent>
+30        <!-- If your sends SMS messages -->
+31        <intent>
+31-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:15:5-18:14
+32            <action android:name="android.intent.action.SENDTO" />
+32-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:16:9-63
+32-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:16:17-60
+33
+34            <data android:scheme="smsto" />
+34-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:7:9-40
+34-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:7:15-37
+35        </intent>
+36        <!-- If your app sends emails -->
+37        <intent>
+37-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:20:5-23:14
+38            <action android:name="android.intent.action.SEND" />
+38-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:21:9-61
+38-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:21:17-58
+39
+40            <data android:mimeType="*/*" />
+40-->/home/rogerio/StudioProjects/todo/chamadas_mensagens/android/app/src/main/AndroidManifest.xml:7:9-40
+41        </intent>
+42    </queries>
+43
+44    <application
+45        android:name="android.app.Application"
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.6.0] /home/rogerio/.gradle/caches/transforms-2/files-2.1/122df2e57d294d1a53db26bbc3b813c1/core-1.6.0/AndroidManifest.xml:24:18-86
+47        android:debuggable="true"
+48        android:icon="@mipmap/ic_launcher"
+49        android:label="chamadas_mensagens" >
+50        <activity
+51            android:name="br.com.rogeriooliveira.chamadas_mensagens.MainActivity"
+52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53            android:exported="true"
+54            android:hardwareAccelerated="true"
+55            android:launchMode="singleTop"
+56            android:theme="@style/LaunchTheme"
+57            android:windowSoftInputMode="adjustResize" >
+58
+59            <!--
+60                 Specifies an Android theme to apply to this Activity as soon as
+61                 the Android process has started. This theme is visible to the user
+62                 while the Flutter UI initializes. After that, this theme continues
+63                 to determine the Window background behind the Flutter UI.
+64            -->
+65            <meta-data
+66                android:name="io.flutter.embedding.android.NormalTheme"
+67                android:resource="@style/NormalTheme" />
+68
+69            <intent-filter>
+70                <action android:name="android.intent.action.MAIN" />
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+73            </intent-filter>
+74        </activity>
+75        <!--
+76             Don't delete the meta-data below.
+77             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+78        -->
+79        <meta-data
+80            android:name="flutterEmbedding"
+81            android:value="2" />
+82
+83        <activity
+83-->[:url_launcher_android] /home/rogerio/StudioProjects/todo/chamadas_mensagens/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+84            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+84-->[:url_launcher_android] /home/rogerio/StudioProjects/todo/chamadas_mensagens/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+85            android:exported="false"
+85-->[:url_launcher_android] /home/rogerio/StudioProjects/todo/chamadas_mensagens/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+86            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+86-->[:url_launcher_android] /home/rogerio/StudioProjects/todo/chamadas_mensagens/build/url_launcher_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+87
+88        <uses-library
+88-->[androidx.window:window:1.0.0-beta04] /home/rogerio/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+89            android:name="androidx.window.extensions"
+89-->[androidx.window:window:1.0.0-beta04] /home/rogerio/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+90            android:required="false" />
+90-->[androidx.window:window:1.0.0-beta04] /home/rogerio/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+91        <uses-library
+91-->[androidx.window:window:1.0.0-beta04] /home/rogerio/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+92            android:name="androidx.window.sidecar"
+92-->[androidx.window:window:1.0.0-beta04] /home/rogerio/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+93            android:required="false" />
+93-->[androidx.window:window:1.0.0-beta04] /home/rogerio/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+94    </application>
+95
+96</manifest>

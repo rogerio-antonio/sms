@@ -1,0 +1,4 @@
+#Fri Apr 15 20:54:47 BRT 2022
+base.0=/home/rogerio/StudioProjects/todo/chamadas_mensagens/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,6 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+br/com/rogeriooliveira/chamadas_mensagens/MainActivity.java
+ br.com.rogeriooliveira.chamadas_mensagens.MainActivity
+br/com/rogeriooliveira/chamadas_mensagens/BuildConfig.java
+ br.com.rogeriooliveira.chamadas_mensagens.BuildConfig
